@@ -35,9 +35,7 @@ reg memtoreg_memwb, memwrite_memwb, regwrite_memwb;
 
 wire [31:0] mem_read_data, reg_write_data;
 
-//////////////////////////////////////////////////////////////////////////////
-
-// IFID stage
+// Initialization
 
 initial begin
 	pc = 0; pc_ex = 0; pc_memwb = 0;
@@ -50,6 +48,10 @@ initial begin
 	memtoreg_memwb = 0; memwrite_memwb = 0; regwrite_memwb = 0;
 end
 assign rst = 0;
+
+//////////////////////////////////////////////////////////////////////////////
+
+// IFID stage
 
 always@(posedge clk) begin
 	if (halt) halted <= halt;
