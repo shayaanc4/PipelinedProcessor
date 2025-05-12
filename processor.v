@@ -66,7 +66,7 @@ always@* begin
 		alusrc = 0; 
 		regwrite = 0;
 		alu_opcode = 3'b0;
-		instruction = 8'h00000033;
+		instruction = 8'h00000033; // no-op instruction
 	end else begin
 		branch = branch_out;
 		memtoreg = memtoreg_out; 
