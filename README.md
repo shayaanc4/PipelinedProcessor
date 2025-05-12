@@ -1,6 +1,6 @@
 # 🧠 Pipelined RISC-V Processor
 
-This project implements a multistage pipelined processor in Verilog based on the RISC-V ISA. It was developed as part of coursework at Brown University, demonstrating significant performance improvements over a single-cycle architecture through instruction-level parallelism.
+This project implements a multistage pipelined processor in Verilog based on the RISC-V ISA. 
 
 ## 📁 Repository Structure
 
